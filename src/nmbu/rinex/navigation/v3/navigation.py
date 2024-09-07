@@ -232,7 +232,7 @@ def read_navigation_blocks_v3(
 
                 result.satellites[current_block.sv][current_block.timestamp].timestamp = current_block.timestamp
 
-                if current_block.gnss_symbol in ('G', 'C', 'E'):
+                if current_block.gnss_symbol in ('G', 'C', 'E', 'J'):
                     result.satellites[current_block.sv][current_block.timestamp].clock_bias = current_block.clock_bias
                     result.satellites[current_block.sv][current_block.timestamp].clock_drift = current_block.clock_drift
                     result.satellites[current_block.sv][current_block.timestamp].clock_drift_rate = current_block.clock_drift_rate
